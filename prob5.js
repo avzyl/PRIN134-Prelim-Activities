@@ -21,6 +21,28 @@ function rating(){
     
 }
 
+function computeAll(){
+    let avg1 = getAvg(stud1);
+    console.log("Grades:", stud1.join(", "), ". Grade average:", avg1);
+    
+    let avg2 = getAvg(stud2);
+    console.log("Grades:", stud2.join(", "), ". Grade average:", avg2);
+    
+    let avg3 = getAvg(stud3);
+    console.log("Grades:", stud3.join(", "), ". Grade average:", avg3);
+    
+    let avg4 = getAvg(stud4);
+    console.log("Grades:", stud4.join(", "), ". Grade average:", avg4);
+    
+    let avg5 = getAvg(stud5);
+    console.log("Grades:", stud5.join(", "), ". Grade average:", avg5);
 
-let avg1 = getAvg(stud1);
-console.log("Grades:", stud1.join(", "), ". Grade average:", avg1);
+}
+
+function executeAll() {
+    computeAll()
+}
+
+const calcu = executeAll;
+console.log(calcu);
+calcu();
