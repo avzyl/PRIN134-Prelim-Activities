@@ -2,7 +2,7 @@
 let str = "Hello World";
 // let str = numbers.toString();
 
-function toHash(arr){
+function toHash(){
     let newStr = '';
     let changedLetters = [];
     
